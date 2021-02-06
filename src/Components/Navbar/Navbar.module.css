@@ -1,0 +1,23 @@
+.nav {
+  grid-area: n;
+  background-color: rgb(199, 139, 238);
+  border: 5px solid white;
+  /* color: grey; */
+}
+
+li {
+  list-style-type: none;
+}
+ul {
+  margin-left: 10px;
+  padding-left: 0;
+}
+h2 {
+  padding-left: 10px;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
+}
