@@ -1,7 +1,4 @@
-import Contacts from "./Contacts";
-
 export const ContactsTable = ({ data }) => {
-  //   debugger;
   return (
     <div>
       <table border="1">

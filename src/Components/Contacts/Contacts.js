@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useContacts } from "./useContacts";
+import { useContacts } from "./useData";
 import { ContactsTable } from "./ContactsTable";
 const Contacts = () => {
   const contacts = useContacts();
