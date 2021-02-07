@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Contacts from "./Components/Contacts/Contacts";
 import Footer from "./Components/Footer/Footer";
 import Posts from "./Components/Posts/Posts";
+import Albums from "./Components/Albums/Albums";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Posts /> */}
           <Route path="/contacts" render={() => <Contacts />} />
           <Route path="/posts" render={() => <Posts />} />
+          <Route path="/albums" render={() => <Albums />} />
         </div>
         <Footer />
       </div>

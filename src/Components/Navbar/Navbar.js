@@ -18,6 +18,11 @@ const Navbar = () => {
             Posts
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/Albums" activeClassName="selected">
+            Albums
+          </NavLink>
+        </li>
       </ul>
       {/* <div>
         <Loginization />
