@@ -9,3 +9,21 @@ h2 {
 .singlelist {
   color: rgb(206, 25, 125);
 }
+
+.picture {
+  width: 100px;
+  height: 100px;
+}
+
+.sign {
+  width: 120px;
+  height: 150px;
+
+  float: left;
+  padding: 5px;
+  margin: 5px 0 5px 5px;
+}
+.signfig {
+  overflow: hidden;
+  height: 67px;
+}

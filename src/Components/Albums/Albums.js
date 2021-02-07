@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useAlbums } from "./useAlbums";
 import classes from "./Albums.module.css";
+import { NavLink } from "react-router-dom";
 
 const Albums = () => {
   const albums = useAlbums();
@@ -10,7 +11,6 @@ const Albums = () => {
   if (albums.isError) {
     return <div>...error</div>;
   }
-  // console.log(albums);
   let data = albums.data;
   return (
     <div>
@@ -19,9 +19,14 @@ const Albums = () => {
         {data.map((data) => (
           <ol>
             <li>
-              <a href="#" className={classes.singlelist}>
-                {data.title}
-              </a>
+              <NavLink
+                albumId={data.id}
+                to={"/Album/" + data.id}
+                activeClassName="selected"
+                className={classes.singlelist}
+              >
+                {data.id}. {data.title}
+              </NavLink>
             </li>
           </ol>
         ))}
