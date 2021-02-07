@@ -1,0 +1,20 @@
+.container {
+  max-width: 500px;
+}
+
+.text {
+  border: solid 1px gray;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.user {
+  color: black;
+  font-weight: bold;
+}
+.userphoto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}

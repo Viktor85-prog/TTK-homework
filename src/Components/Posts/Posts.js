@@ -1,6 +1,7 @@
-import * as axios from "axios";
-import { usePosts } from "../../api/api";
+// import * as axios from "axios";
+import { usePosts, useAddPost } from "../../api/api";
 import PostsTable from "./PostsTable";
+import NewPostForm from "./NewPostForm";
 
 const Posts = () => {
   const posts = usePosts();
@@ -12,6 +13,7 @@ const Posts = () => {
   }
   return (
     <div>
+      <NewPostForm />
       <PostsTable data={posts.posts.data} />
     </div>
   );

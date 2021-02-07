@@ -1,24 +1,17 @@
+import classes from "./Posts.module.css";
+
 const PostsTable = ({ data }) => {
   console.log(data);
   return (
-    <div>
-      <table border="1">
-        <tr>
-          <th>userId</th>
-          <th>id</th>
-          <th>tittle</th>
-          <th>body</th>
-        </tr>
-
-        {data.map((data) => (
-          <tr>
-            <td>{data.userId}</td>
-            <td>{data.id}</td>
-            <td>{data.title}</td>
-            <td>{data.body}</td>
-          </tr>
-        ))}
-      </table>
+    <div className={classes.container}>
+      {data.map((data) => (
+        <div>
+          <div className={classes.user}>
+            userId:{data.userId} id: {data.id} title: {data.title}
+          </div>
+          <div className={classes.text}>{data.body}</div>
+        </div>
+      ))}
     </div>
   );
 };
